@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   set_files.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ltrinchi <ltrinchi@student.42lyon.fr>      +#+  +:+       +#+        */
+/*   By: mdegraeu <mdegraeu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/16 11:49:32 by ltrinchi          #+#    #+#             */
-/*   Updated: 2022/06/17 15:32:09 by ltrinchi         ###   ########lyon.fr   */
+/*   Updated: 2023/10/13 11:52:29 by mdegraeu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -91,7 +91,6 @@ t_redic	*ft_get_files(t_data *data, int nb_cmd)
 	int		i;
 	t_redic	*rtn;
 	t_args	*start;
-	int		type;
 
 	i = 0;
 	rtn = ft_calloc(nb_cmd + 1, sizeof(t_redic));
@@ -102,7 +101,6 @@ t_redic	*ft_get_files(t_data *data, int nb_cmd)
 	rtn[i].output_type = 0;
 	rtn[i].input_file = NULL;
 	rtn[i].output_file = NULL;
-	type = 0;
 	while (start)
 	{
 		ft_get_file_help(start, rtn, &i);

@@ -6,7 +6,7 @@
 /*   By: mdegraeu <mdegraeu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/17 13:52:49 by mdegraeu          #+#    #+#             */
-/*   Updated: 2022/06/17 14:23:08 by mdegraeu         ###   ########.fr       */
+/*   Updated: 2023/10/13 11:51:59 by mdegraeu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,14 +59,8 @@ void	ft_cpywithoutquotes_help(char *str, char *dst)
 
 char	*ft_cpywithoutquotes(char *str, int del)
 {
-	int		i;
-	int		j;
-	int		q;
 	char	*dst;
 
-	i = 0;
-	j = 0;
-	q = 0;
 	dst = malloc(sizeof(char) * (ft_strlen(str) - del + 1));
 	if (!dst)
 		return (NULL);
@@ -76,11 +70,9 @@ char	*ft_cpywithoutquotes(char *str, int del)
 
 int	ft_delquotes(t_data *data)
 {
-	int		i;
 	int		del;
 	char	*dst;
 
-	i = 0;
 	del = 0;
 	while (data->lstargs)
 	{

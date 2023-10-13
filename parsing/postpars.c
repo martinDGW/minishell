@@ -6,7 +6,7 @@
 /*   By: mdegraeu <mdegraeu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/06 14:22:36 by mdegraeu          #+#    #+#             */
-/*   Updated: 2022/06/17 14:25:32 by mdegraeu         ###   ########.fr       */
+/*   Updated: 2023/10/13 11:51:03 by mdegraeu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,13 +42,11 @@ static void	ft_rcpy(t_data *data, char *str, char *dst, int q)
 {
 	int	i;
 	int	j;
-	int	prev_q;
 
 	i = 0;
 	j = 0;
 	while (str[i])
 	{
-		prev_q = q;
 		q = ft_quotes(str[i], q);
 		if (str[i] == '$' && q != 1)
 		{
