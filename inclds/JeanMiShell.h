@@ -6,7 +6,7 @@
 /*   By: mdegraeu <mdegraeu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/16 13:14:47 by ltrinchi          #+#    #+#             */
-/*   Updated: 2022/06/17 14:05:14 by mdegraeu         ###   ########.fr       */
+/*   Updated: 2023/10/20 13:18:57 by mdegraeu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,7 +65,7 @@
 # define BUILT_EXIT_P 12
 # define EXEC_P 13
 
-int	g_val_rtn;
+extern int	g_val_rtn;
 
 typedef enum e_boolean
 {
